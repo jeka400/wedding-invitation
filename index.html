@@ -44,7 +44,7 @@
         border-width: 0 0 1px 0;
         border-radius: 20px;
     }
-    
+  
     .containerI {
         position: relative;
         text-align: center;
@@ -73,7 +73,7 @@
         color:#ffffff;
         font-size: 25px;
     }
-    
+  
     .popup-overlay{
       /*Hides pop-up when there is no "active" class*/
       visibility:hidden;
@@ -81,7 +81,7 @@
       background:#ffffff;
       border:3px solid #666666;
       width:50%;
-      height:50%;
+      height:70%;
       left:25%; 
     }
     .popup-overlay.active{
@@ -89,7 +89,7 @@
       visibility:visible;
       text-align:center;
     }
-
+   
     .popup-content {
       /*Hides pop-up content when there is no "active" class */
      visibility:hidden;
@@ -100,6 +100,22 @@
       visibility:visible;
     }
     
+            
+    @media only screen and (max-width: 600px) {
+        h1,h2 {padding-top: 10px; font-size: 30px;}
+        .h11 {font-size: 60px;letter-spacing: 2px; padding-top: 30px; margin-bottom: 20px;}
+        .h22 {font-size: 30px }
+        .h222 {font-size: 40px}
+        .bgimg2 {background-image: url(img/wedding33.jpg)}
+        hr {margin-top: 30px}
+        .open {margin: 5px; font-size: 15px; padding: 5px 40px; }
+        .open:hover {font-size: 16px}
+        .popup-overlay {width: 90%;height: 80%;left: 5%;}
+        
+    }
+    @media only screen and (max-width:400px){
+        .popup-overlay {width: 95%; height: 80%; left: 2.5%}
+    }
     
 </style>
 </head>
@@ -173,7 +189,7 @@
   </div>
 </div>
 
-<!-- =========================================== RSVP section ========================================================= -->
+<!-- =========================================== RSVP section ======================================================= -->
     
 <div class="container-fluid" id="rsvp" style="background-color: rgb(224,153,151); height: 300px; margin-top: 50px;">
   <h1>HOPE YOU CAN MAKE IT!</h1>
@@ -184,24 +200,26 @@
 
 
     <!-- RSVP modal -->
-    <div class="popup-overlay" style="max-width:700px; margin-top: -300px;">
+    <div class="popup-overlay" style="max-width:700px; margin-top: -350px;">
        <div class="popup-content">
-          <h3 style="color: black;font-size: 40px;">CAN YOU COME?</h3>
+          <h3 style="color: black;font-size: 40px; margin-bottom: 20px">CAN YOU COME?</h3>
           <p style="font-size: 20px">We really hope you can make it.</p>
           <form>
-                <input type="text" placeholder="Name(s).." name="name" style="width: 80%">
+                <input type="text" placeholder="Name(s).." name="name" style="width: 80%;height: 50px; margin-top: 20px;">
           </form>
-           <p style="font-size: 16px; margin-bottom: 40px; margin-top: 20px;"><i>Sincerely, Tom & Jane</i></p>
-            <a href="#"><button class="button" style="background-color: green; color: black; text-align: center; width: 300px; height: 50px">Going</button></a>
-            <a href="#"><button class="button" style="background-color: red; color: black; text-align: center; width: 300px; height: 50px">Can't come</button></a>
+           <p style="font-size: 16px; margin-bottom: 40px; margin-top: 40px;"><i>Sincerely, Tom & Jane</i></p>
+           <div class="row">
+               <div class="col-md-6"><a href="#"><button class="button" style="background-color: green; color: white; font-size: 16px; text-align: center; width: 80%; height: 50px">Going</button></a></div>
+               <div class="col-md-6"><a href="#"><button class="button" style="background-color: red; color: white; font-size: 16px; text-align: center; width: 80%; height: 50px">Can't come</button></a></div>
+               
            </div>
-       
-    </div>
+         </div>
+     </div>
 </div>
     
 <div class="container"><hr></div>
 
-<!-- Footer -->
+<!-- =========================================== Footer ============================================================== -->
 <footer style="height: 40px;background-color: black; color: white; text-align: center;">
   <p>Powered by <i>Jeka</i></p>
 </footer>

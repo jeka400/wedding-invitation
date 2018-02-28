@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tom and Jane</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<style>
+    body,h1,h2{font-family: "Raleway", sans-serif;}
+    body { background-color: antiquewhite;}
+    h1,h2 {padding-top: 50px; color: lightgray; text-shadow: 2px 2px 4px #000000; font-size: 50px; text-align: center;}
+    .h11 { font-size: 130px; letter-spacing: 10px; padding-top: 80px; margin-bottom: 50px; text-shadow: 3px 3px 4px #000000;}
+    .h22 {font-size: 50px; text-shadow: 2px 2px 4px #000000;}
+    .h222 {color: darkgray; font-size: 60px}
+    body, html {height: 100%}
+    p {line-height: 2}
+    .bgimg, .bgimg2 {
+        min-height: 100%;
+        background-position: center;
+        background-size: cover;
+    }
+    .bgimg {background-image: url("img/wedding1.jpg")}
+    .bgimg2 {background-image: url("img/wedding3.jpg")}
+    
+    hr {
+        margin-top: 50px;
+        overflow: visible; /* For IE */
+        height: 30px;
+        border-style: solid;
+        border-color: black;
+        border-width: 1px 0 0 0;
+        border-radius: 20px;
+    }
+    hr:before {
+        display: block;
+        content: "";
+        height: 30px;
+        margin-top: -31px;
+        border-style: solid;
+        border-color: black;
+        border-width: 0 0 1px 0;
+        border-radius: 20px;
+    }
+    
+    .containerI {
+        position: relative;
+        text-align: center;
+        color: white;
+    }
+    .bottom-right {
+        position: absolute;
+        bottom: 8px;
+        right: 16px;
+    }
+    
+    .open {
+      display:inline-block;
+      vertical-align:middle;
+      border-radius:30px;
+      margin: 10px;
+      font-size: 22px;
+      color:#666666;
+      border:1px solid #666666; 
+      padding:8px 60px; 
+      background-color: pink;
+    }
+    .open:hover {
+         border:1px solid black;
+        background:#666666;
+        color:#ffffff;
+        font-size: 25px;
+    }
+    
+    .popup-overlay{
+      /*Hides pop-up when there is no "active" class*/
+      visibility:hidden;
+      position:absolute;
+      background:#ffffff;
+      border:3px solid #666666;
+      width:50%;
+      height:50%;
+      left:25%; 
+    }
+    .popup-overlay.active{
+      /*displays pop-up when "active" class is present*/
+      visibility:visible;
+      text-align:center;
+    }
+
+    .popup-content {
+      /*Hides pop-up content when there is no "active" class */
+     visibility:hidden;
+    }
+
+    .popup-content.active {
+      /*Shows pop-up content when "active" class is present */
+      visibility:visible;
+    }
+    
+    
+</style>
+</head>
+<body>
+
+<!-- ============================================= Header / Home =================================================== -->
+<header class="container-fluid bgimg" id="home">
+  <div class="container">
+    <h1 class="container h11"><strong>Tom & Jane</strong></h1>
+    <h2 class="h22"><b>Are getting married</b></h2>
+    <h2 class="h222"><b>08.08.2018.</b></h2>
+  </div>
+</header>
+
+<!-- =========================================== Navbar (sticky bottom) ============================================ -->
+<nav class="navbar navbar-inverse navbar-fixed-bottom" style="background-color: rgba(255,255,255, 0.8); ">
+  <div class="container-fluid">
+    <ul class="nav navbar-nav">
+      <li style="margin-right: 200px; margin-left: 200px"><a href="#home" style="color: black; opacity: 100;">Home</a></li>
+      <li style="margin-right: 200px"><a href="#us" style="color: black" >Tom and Jane</a></li>
+      <li style="margin-right: 200px"><a href="#wedding" style="color: black">Wedding</a></li>
+      <li ><a href="#rsvp" style="color: black">RSVP</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- ========================================== About / Tom And Jane =============================================== -->
+<div class="container" id="us">
+  <div class="container">
+    <hr>
+      
+    <h1 class="container"><b>Tom & Jane</b></h1>
+    <img class="img-thumbnail" src="img/wedding5.jpg" style="width:100%; margin:30px 0">
+    <p><i>You all know us. And we all know you. We are getting married lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint
+      occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+      laboris nisi ut aliquip ex ea commodo consequat.</i>
+    </p><br>
+    <p style="text-align: center"><a href="#"><button type="button" class="btn btn-danger btn-lg" style="margin-bottom: 50px; margin-top: 20px; width: 300px; height: 100px; font-size: 30px;">Wedding Details</button></a></p>
+      
+    <hr>
+  </div>
+</div>
+
+<!-- ========================================== Background photo ==================================================== -->
+    
+<div class="container-fluid  containerI bgimg2">
+     <div class="bottom-right" style="font-size: 50px; color: rgb(224,153,151); text-shadow: 2px 2px 4px #000000;"><b>Of course..</b></div> 
+</div>
+
+<!-- ======================================== Wedding information =================================================== -->
+    
+<div class="container" id="wedding">
+  <div class="container">
+    <hr>
+      
+    <h1><b>The Wedding</b></h1>
+    <img  class="img-thumbnail" src="img/wedding4.jpg" style="width:100%; margin:30px 0">
+    <div class="row">
+      <div class="col-md-6">
+        <h2 style="font-size: 40px; color: darkgray; margin-bottom: 50px;">When</h2>
+        <p style="text-align: center; font-size: 20px;">Wedding Ceremony - 2:00pm</p>
+        <p style="text-align: center; font-size: 20px;">Reception & Dinner - 5:00pm</p>
+      </div>
+      <div class="col-md-6">
+        <h2 style="font-size: 40px; color: darkgray; margin-bottom: 50px;">Where</h2>
+        <p style="text-align: center; font-size: 20px;">Some place, an address</p>
+        <p style="text-align: center; font-size: 20px;">Some where, some address</p>
+      </div>
+    </div>
+      <hr>
+  </div>
+</div>
+
+<!-- =========================================== RSVP section ========================================================= -->
+    
+<div class="container-fluid" id="rsvp" style="background-color: rgb(224,153,151); height: 300px; margin-top: 50px;">
+  <h1>HOPE YOU CAN MAKE IT!</h1>
+  <p  style="text-align: center; font-size: 20px;">Kindly Respond By January, 2018</p>
+  <p style="text-align: center;margin-top: 30px;">
+    <button class="open">RSVP</button>
+  </p>
+
+
+    <!-- RSVP modal -->
+    <div class="popup-overlay" style="max-width:700px; margin-top: -300px;">
+       <div class="popup-content">
+          <h3 style="color: black;font-size: 40px;">CAN YOU COME?</h3>
+          <p style="font-size: 20px">We really hope you can make it.</p>
+          <form>
+                <input type="text" placeholder="Name(s).." name="name" style="width: 80%">
+          </form>
+           <p style="font-size: 16px; margin-bottom: 40px; margin-top: 20px;"><i>Sincerely, Tom & Jane</i></p>
+            <a href="#"><button class="button" style="background-color: green; color: black; text-align: center; width: 300px; height: 50px">Going</button></a>
+            <a href="#"><button class="button" style="background-color: red; color: black; text-align: center; width: 300px; height: 50px">Can't come</button></a>
+           </div>
+       
+    </div>
+</div>
+    
+<div class="container"><hr></div>
+
+<!-- Footer -->
+<footer style="height: 40px;background-color: black; color: white; text-align: center;">
+  <p>Powered by <i>Jeka</i></p>
+</footer>
+<div style="margin-bottom:32px"> </div>
+
+    
+    <script>
+         //appends an "active" class to .popup and .popup-content when the "Open" button is clicked
+        $(".open").on("click", function(){
+          $(".popup-overlay, .popup-content").addClass("active");
+        });
+
+        //removes the "active" class to .popup and .popup-content when the "Close" button is clicked 
+        $(".close, .popup-overlay").on("click", function(){
+          $(".popup-overlay, .popup-content").removeClass("active");
+        });
+    </script>
+    
+</body>
+</html>

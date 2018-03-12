@@ -100,6 +100,7 @@
       visibility:visible;
     }
     
+ 
             
     @media only screen and (max-width: 600px) {
         h1,h2 {padding-top: 10px; font-size: 30px;}
@@ -112,9 +113,16 @@
         .open:hover {font-size: 16px}
         .popup-overlay {width: 90%;height: 80%;left: 5%;}
         
+        
     }
     @media only screen and (max-width:400px){
         .popup-overlay {width: 95%; height: 80%; left: 2.5%}
+    }
+    @media only screen and (max-width: 991px){
+        .bottom { margin-bottom: 60px}
+    }
+    @media only screen and (min-width: 992px){
+        .bottom { margin-bottom: 32px}
     }
     
 </style>
@@ -133,12 +141,12 @@
 <!-- =========================================== Navbar (sticky bottom) ============================================ -->
 <nav class="navbar navbar-inverse navbar-fixed-bottom" style="background-color: rgba(255,255,255, 0.8); ">
   <div class="container-fluid">
-    <ul class="nav navbar-nav">
-      <li style="margin-right: 200px; margin-left: 200px"><a href="#home" style="color: black; opacity: 100;">Home</a></li>
-      <li style="margin-right: 200px"><a href="#us" style="color: black" >Tom and Jane</a></li>
-      <li style="margin-right: 200px"><a href="#wedding" style="color: black">Wedding</a></li>
-      <li ><a href="#rsvp" style="color: black">RSVP</a></li>
-    </ul>
+      <div class="row">
+          <div class="col-md-3" style="text-align: center"><a href="#home" style="color: black; opacity: 100;">Home</a></div>
+          <div class="col-md-3" style="text-align: center"><a href="#us" style="color: black;" >Tom and Jane</a></div>
+          <div class="col-md-3" style="text-align: center"><a href="#wedding" style="color: black;">Wedding</a></div>
+          <div class="col-md-3" style="text-align: center"><a href="#rsvp" style="color: black;">RSVP</a></div>
+      </div>
   </div>
 </nav>
 
@@ -223,7 +231,7 @@
 <footer style="height: 40px;background-color: black; color: white; text-align: center;">
   <p>Powered by <i>Jeka</i></p>
 </footer>
-<div style="margin-bottom:32px"> </div>
+<div class="bottom"> </div>
 
     
     <script>
